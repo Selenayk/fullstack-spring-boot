@@ -12,14 +12,12 @@ export const EditUser = () => {
     email: '',
   });
 
-  const [error, setError] = useState('');
-
   const fetchUser = async (id) => {
     try {
       const { data } = await axios.get(`http://localhost:8080/user/${id}`);
       setUser(data);
     } catch (error) {
-      setError('Failed to fetch user data.');
+      console.log('Failed to fetch user data.');
     }
   };
 
@@ -37,7 +35,7 @@ export const EditUser = () => {
       await axios.put(`http://localhost:8080/user/${id}`, user);
       navigate('/');
     } catch (error) {
-      setError('Failed to update user data.');
+      console.log('Failed to update user data.');
     }
   };
 
