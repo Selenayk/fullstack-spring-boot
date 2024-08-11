@@ -73,7 +73,7 @@ export const AddUser = () => {
               <input
                 type={'text'}
                 className="form-control"
-                placeholder="Enter your e-mail adress"
+                placeholder="Enter your e-mail address"
                 name="email"
                 value={email}
                 onChange={(e) => onInputChange(e)}
