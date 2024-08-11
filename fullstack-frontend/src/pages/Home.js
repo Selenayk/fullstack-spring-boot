@@ -31,10 +31,10 @@ export const Home = () => {
 
   return (
     <div className="container">
-      <div className="py-4">
-        <table className="table border shadow">
+      <div className="mt-5">
+        <table className="table border shadow-lg">
           <thead>
-            <tr>
+            <tr style={{ fontSize: '1.3rem' }}>
               <th scope="col">#</th>
               <th scope="col">Name</th>
               <th scope="col">Username</th>
@@ -45,7 +45,9 @@ export const Home = () => {
           <tbody>
             {users.map((user, index) => (
               <tr key={user.id}>
-                <th scope="row">{index + 1}</th>
+                <th scope="row" style={{ fontSize: '1.1rem' }}>
+                  {index + 1}
+                </th>
                 <td>{user.name}</td>
                 <td>{user.username}</td>
                 <td>{user.email}</td>

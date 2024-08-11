@@ -42,10 +42,10 @@ export const EditUser = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
+        <div className="col-md-6 offset-md-3 border rounded p-4 mt-5 shadow">
           <h2 className="text-center m-4">Edit User</h2>
           <form onSubmit={onUpdateUser}>
-            <div className="mb-3">
+            <div className="mb-3 text-start">
               <label
                 htmlFor="name"
                 className="form-label"
@@ -63,7 +63,7 @@ export const EditUser = () => {
                 required
               />
             </div>
-            <div className="mb-3">
+            <div className="mb-3 text-start">
               <label
                 htmlFor="username"
                 className="form-label"
@@ -80,7 +80,7 @@ export const EditUser = () => {
                 onChange={onInputChange}
               />
             </div>
-            <div className="mb-3">
+            <div className="mb-3 text-start">
               <label
                 htmlFor="email"
                 className="form-label"
